@@ -37,3 +37,14 @@ class TaskManager:
                 print(task)
         else:
             print("Нет текущих задач.")
+
+
+manager = TaskManager()
+manager.add_task("Купить продукты", "06-05-2024")
+manager.add_task("Сдать проект", "05-05-2024")
+
+manager.show_current_tasks()
+
+manager.mark_task_completed("Купить продукты")
+
+manager.show_current_tasks()
